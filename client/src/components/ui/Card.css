@@ -1,0 +1,31 @@
+.card {
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: all var(--transition-base);
+}
+
+.card-clickable { cursor: pointer; }
+
+.card-gradient {
+  border: none;
+  color: white;
+}
+.card-gradient .stat-label,
+.card-gradient .stat-value { color: white; }
+
+/* Glow variant */
+.card-glow {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-card), var(--glow-primary);
+}
+.card-glow:hover {
+  box-shadow: var(--shadow-card-hover), 0 0 35px rgba(99, 102, 241, 0.3);
+}
+
+/* Elevated */
+.card-elevated {
+  box-shadow: var(--shadow-lg);
+}
+.card-elevated:hover {
+  box-shadow: var(--shadow-xl);
+}
