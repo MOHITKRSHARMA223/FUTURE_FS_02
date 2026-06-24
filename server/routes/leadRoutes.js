@@ -5,7 +5,7 @@ const { addNote, getNotes } = require('../controllers/noteController');
 const { protect } = require('../middleware/auth');
 
 // All routes are protected
-router.use(protect);
+router.use(protect);    
 
 // Lead CRUD
 router.route('/')
